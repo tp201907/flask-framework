@@ -1,6 +1,6 @@
 from flask import Flask, render_template, flash, request, send_from_directory
 import pandas as pd
-from yahoo_fin import stock_info as si
+import quandl
 from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
 import os
 import datetime
@@ -9,9 +9,14 @@ from bokeh.embed import components
 from bokeh.models import HoverTool, Plot
 from bokeh.io import output_notebook, push_notebook, show
 
+
+
+
 app_pradhan = Flask(__name__)
 app_pradhan.config.from_object(__name__)
 app_pradhan.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
+
+
 
 
 @app_pradhan.route('/')
@@ -22,7 +27,7 @@ def msft_ticker():
     end = datetime.date.today()  
 
     # Micosoft stock data
-    msft = si.get_data('msft', start, end).close
+    msft = quandl.get('EOD/MSFT', start_date = start, end_date = end, returns="numpy", authtoken="JZA5nXmNZk9T2Y96zsEQ")
     msft = pd.DataFrame(msft)
     msft.reset_index(level=0, inplace=True)
     #msft['date']=pd.to_datetime(msft['date'])
@@ -32,7 +37,7 @@ def msft_ticker():
     TOOLS = 'save,pan,box_zoom,reset,wheel_zoom,hover'   
     plot = figure(plot_height=300, sizing_mode='scale_width', x_axis_type="datetime", tools = TOOLS)
 
-    plot.line(msft['date'], msft['close'], legend = "MSFT", color = "blue")
+    plot.line(msft['Date'], msft['Close'], legend = "MSFT", color = "blue")
 
     plot.xaxis.axis_label = 'Time'
     plot.yaxis.axis_label = 'Close price in USD'
@@ -56,6 +61,6 @@ def favicon():
 
 
 if __name__ == '__main__':
-   app_pradhan.run(port=6038)
+   app_pradhan.run(port=6040)
 
 
