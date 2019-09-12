@@ -1,1 +1,1 @@
-web: gunicorn app.ipynb --log-file -
+web: gunicorn app --log-file -
