@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red46\green174\blue187;\red232\green235\blue20;\red47\green180\blue29;
+\red47\green231\blue26;\red180\green36\blue25;\red153\green153\blue153;\red200\green20\blue201;}
+\margl1440\margr1440\vieww18220\viewh13640\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 2019-09-12T14:00:05.082590+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi\
+\cf2 2019-09-12T14:00:05.082592+00:00 app[web.1]:\cf0  self.callable = self.load()\
+\cf2 2019-09-12T14:00:05.082594+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load\
+\cf2 2019-09-12T14:00:05.082597+00:00 app[web.1]:\cf0  return self.load_wsgiapp()\
+\cf2 2019-09-12T14:00:05.082599+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp\
+\cf2 2019-09-12T14:00:05.082601+00:00 app[web.1]:\cf0  return util.import_app(self.app_uri)\
+\cf2 2019-09-12T14:00:05.082603+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app\
+\cf2 2019-09-12T14:00:05.082605+00:00 app[web.1]:\cf0  __import__(module)\
+\cf2 2019-09-12T14:00:05.082607+00:00 app[web.1]:\cf0  File "/app/app.py", line 5, in <module>\
+\cf2 2019-09-12T14:00:05.082609+00:00 app[web.1]:\cf0  "execution_count": null,\
+\cf2 2019-09-12T14:00:05.082611+00:00 app[web.1]:\cf0  NameError: name 'null' is not defined\
+\cf2 2019-09-12T14:00:05.082734+00:00 app[web.1]:\cf0  [2019-09-12 14:00:05 +0000] [10] [INFO] Worker exiting (pid: 10)\
+\cf2 2019-09-12T14:00:05.109615+00:00 app[web.1]:\cf0  [2019-09-12 14:00:05 +0000] [11] [INFO] Booting worker with pid: 11\
+\cf2 2019-09-12T14:00:05.115449+00:00 app[web.1]:\cf0  [2019-09-12 14:00:05 +0000] [11] [ERROR] Exception in worker process\
+\cf2 2019-09-12T14:00:05.115453+00:00 app[web.1]:\cf0  Traceback (most recent call last):\
+\cf2 2019-09-12T14:00:05.115456+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker\
+\cf2 2019-09-12T14:00:05.115458+00:00 app[web.1]:\cf0  worker.init_process()\
+\cf2 2019-09-12T14:00:05.115460+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process\
+\cf2 2019-09-12T14:00:05.115462+00:00 app[web.1]:\cf0  self.load_wsgi()\
+\cf2 2019-09-12T14:00:05.115464+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi\
+\cf2 2019-09-12T14:00:05.115466+00:00 app[web.1]:\cf0  self.wsgi = self.app.wsgi()\
+\cf2 2019-09-12T14:00:05.115468+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi\
+\cf2 2019-09-12T14:00:05.115471+00:00 app[web.1]:\cf0  self.callable = self.load()\
+\cf2 2019-09-12T14:00:05.115473+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load\
+\cf2 2019-09-12T14:00:05.115475+00:00 app[web.1]:\cf0  return self.load_wsgiapp()\
+\cf2 2019-09-12T14:00:05.115477+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp\
+\cf2 2019-09-12T14:00:05.115479+00:00 app[web.1]:\cf0  return util.import_app(self.app_uri)\
+\cf2 2019-09-12T14:00:05.115481+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app\
+\cf2 2019-09-12T14:00:05.115483+00:00 app[web.1]:\cf0  __import__(module)\
+\cf2 2019-09-12T14:00:05.115485+00:00 app[web.1]:\cf0  File "/app/app.py", line 5, in <module>\
+\cf2 2019-09-12T14:00:05.115487+00:00 app[web.1]:\cf0  "execution_count": null,\
+\cf2 2019-09-12T14:00:05.115489+00:00 app[web.1]:\cf0  NameError: name 'null' is not defined\
+\cf2 2019-09-12T14:00:05.115609+00:00 app[web.1]:\cf0  [2019-09-12 14:00:05 +0000] [11] [INFO] Worker exiting (pid: 11)\
+\cf2 2019-09-12T14:00:05.145410+00:00 app[web.1]:\cf0  Traceback (most recent call last):\
+\cf2 2019-09-12T14:00:05.145421+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 203, in run\
+\cf2 2019-09-12T14:00:05.145782+00:00 app[web.1]:\cf0  self.manage_workers()\
+\cf2 2019-09-12T14:00:05.145790+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 545, in manage_workers\
+\cf2 2019-09-12T14:00:05.146100+00:00 app[web.1]:\cf0  self.spawn_workers()\
+\cf2 2019-09-12T14:00:05.146107+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 617, in spawn_workers\
+\cf2 2019-09-12T14:00:05.146426+00:00 app[web.1]:\cf0  time.sleep(0.1 * random.random())\
+\cf2 2019-09-12T14:00:05.146432+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld\
+\cf2 2019-09-12T14:00:05.146629+00:00 app[web.1]:\cf0  self.reap_workers()\
+\cf2 2019-09-12T14:00:05.146635+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers\
+\cf2 2019-09-12T14:00:05.146971+00:00 app[web.1]:\cf0  raise HaltServer(reason, self.WORKER_BOOT_ERROR)\
+\cf2 2019-09-12T14:00:05.147130+00:00 app[web.1]:\cf0  gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>\
+\cf2 2019-09-12T14:00:05.147136+00:00 app[web.1]:\cf0  \
+\cf2 2019-09-12T14:00:05.147138+00:00 app[web.1]:\cf0  During handling of the above exception, another exception occurred:\
+\cf2 2019-09-12T14:00:05.147140+00:00 app[web.1]:\cf0  \
+\cf2 2019-09-12T14:00:05.147145+00:00 app[web.1]:\cf0  Traceback (most recent call last):\
+\cf2 2019-09-12T14:00:05.147149+00:00 app[web.1]:\cf0  File "/app/.heroku/python/bin/gunicorn", line 11, in <module>\
+\cf2 2019-09-12T14:00:05.147303+00:00 app[web.1]:\cf0  sys.exit(run())\
+\cf2 2019-09-12T14:00:05.147309+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run\
+\cf2 2019-09-12T14:00:05.147469+00:00 app[web.1]:\cf0  WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()\
+\cf2 2019-09-12T14:00:05.147494+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/base.py", line 223, in run\
+\cf2 2019-09-12T14:00:05.147689+00:00 app[web.1]:\cf0  super(Application, self).run()\
+\cf2 2019-09-12T14:00:05.147695+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/base.py", line 72, in run\
+\cf2 2019-09-12T14:00:05.147880+00:00 app[web.1]:\cf0  Arbiter(self).run()\
+\cf2 2019-09-12T14:00:05.147886+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 232, in run\
+\cf2 2019-09-12T14:00:05.148074+00:00 app[web.1]:\cf0  self.halt(reason=inst.reason, exit_status=inst.exit_status)\
+\cf2 2019-09-12T14:00:05.148080+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 345, in halt\
+\cf2 2019-09-12T14:00:05.148362+00:00 app[web.1]:\cf0  self.stop()\
+\cf2 2019-09-12T14:00:05.148368+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 393, in stop\
+\cf2 2019-09-12T14:00:05.148630+00:00 app[web.1]:\cf0  time.sleep(0.1)\
+\cf2 2019-09-12T14:00:05.148636+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld\
+\cf2 2019-09-12T14:00:05.148828+00:00 app[web.1]:\cf0  self.reap_workers()\
+\cf2 2019-09-12T14:00:05.148834+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers\
+\cf2 2019-09-12T14:00:05.149110+00:00 app[web.1]:\cf0  raise HaltServer(reason, self.WORKER_BOOT_ERROR)\
+\cf2 2019-09-12T14:00:05.149158+00:00 app[web.1]:\cf0  gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>\
+\cf2 2019-09-12T14:00:05.431253+00:00 heroku[web.1]:\cf0  State changed from crashed to \cf3 starting\cf0 \
+
+\f1\b \cf4 2019-09-12T14:00:08.000000+00:00 app[api]:
+\f0\b0 \cf0  \cf5 Build succeeded\cf0 \
+\cf2 2019-09-12T14:00:09.719990+00:00 heroku[web.1]:\cf0  Starting process with command 
+\f1\b \cf2 `gunicorn app:app`
+\f0\b0 \cf0 \
+\cf2 2019-09-12T14:00:11.637207+00:00 heroku[web.1]:\cf0  State changed from \cf3 starting\cf0  to crashed\
+\cf2 2019-09-12T14:00:11.609248+00:00 heroku[web.1]:\cf0  Process exited with status \cf6 3\cf0 \
+\cf2 2019-09-12T14:00:11.497387+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [4] [INFO] Starting gunicorn 19.9.0\
+\cf2 2019-09-12T14:00:11.497938+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [4] [INFO] Listening at: http://0.0.0.0:29781 (4)\
+\cf2 2019-09-12T14:00:11.498033+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [4] [INFO] Using worker: sync\
+\cf2 2019-09-12T14:00:11.502400+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [10] [INFO] Booting worker with pid: 10\
+\cf2 2019-09-12T14:00:11.510966+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [10] [ERROR] Exception in worker process\
+\cf2 2019-09-12T14:00:11.510971+00:00 app[web.1]:\cf0  Traceback (most recent call last):\
+\cf2 2019-09-12T14:00:11.510973+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker\
+\cf2 2019-09-12T14:00:11.510975+00:00 app[web.1]:\cf0  worker.init_process()\
+\cf2 2019-09-12T14:00:11.510976+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process\
+\cf2 2019-09-12T14:00:11.510977+00:00 app[web.1]:\cf0  self.load_wsgi()\
+\cf2 2019-09-12T14:00:11.510979+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi\
+\cf2 2019-09-12T14:00:11.510981+00:00 app[web.1]:\cf0  self.wsgi = self.app.wsgi()\
+\cf2 2019-09-12T14:00:11.510982+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi\
+\cf2 2019-09-12T14:00:11.510984+00:00 app[web.1]:\cf0  self.callable = self.load()\
+\cf2 2019-09-12T14:00:11.510985+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load\
+\cf2 2019-09-12T14:00:11.510987+00:00 app[web.1]:\cf0  return self.load_wsgiapp()\
+\cf2 2019-09-12T14:00:11.510989+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp\
+\cf2 2019-09-12T14:00:11.510990+00:00 app[web.1]:\cf0  return util.import_app(self.app_uri)\
+\cf2 2019-09-12T14:00:11.510991+00:00 app[web.1]:\cf0  File "/app/.heroku/python/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app\
+\cf2 2019-09-12T14:00:11.510993+00:00 app[web.1]:\cf0  __import__(module)\
+\cf2 2019-09-12T14:00:11.510994+00:00 app[web.1]:\cf0  File "/app/app.py", line 5, in <module>\
+\cf2 2019-09-12T14:00:11.510996+00:00 app[web.1]:\cf0  "execution_count": null,\
+\cf2 2019-09-12T14:00:11.510997+00:00 app[web.1]:\cf0  NameError: name 'null' is not defined\
+\cf2 2019-09-12T14:00:11.511105+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [10] [INFO] Worker exiting (pid: 10)\
+\cf2 2019-09-12T14:00:11.542519+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [4] [INFO] Shutting down: Master\
+\cf2 2019-09-12T14:00:11.542584+00:00 app[web.1]:\cf0  [2019-09-12 14:00:11 +0000] [4] [INFO] Reason: Worker failed to boot.\
+\cf4 2019-09-12T14:00:17.332712+00:00 heroku[router]:\cf0  \cf7 at=\cf6 error\cf0  \cf7 code=
+\f1\b \cf6 H10
+\f0\b0 \cf0  \cf7 desc="App\cf0  \cf7 crashed"\cf0  \cf7 method=
+\f1\b \cf8 GET
+\f0\b0 \cf0  \cf7 path=\cf4 "/"\cf0  \cf7 host=pradhan-dataincubator.herokuapp.com\cf0  \cf7 request_id=b0ff32e5-e111-42ca-bab3-00c2fc88003b\cf0  \cf7 fwd="66.44.28.91"\cf0  \cf7 dyno=\cf0  \cf7 connect=\cf0  \cf7 service=\cf0  \cf7 status=\cf6 503\cf0  \cf7 bytes=\cf0  \cf7 protocol=https\cf0 \
+\
+}
