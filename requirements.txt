@@ -1,4 +1,16 @@
 gunicorn==19.9.0
 requests==2.20.0
 django
-django-heroku
+
+pandas
+bokeh
+dill
+flask
+jinja2
+pip
+simplejson
+quandl
+wtforms
+os
+datetime
+
