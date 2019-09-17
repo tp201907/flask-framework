@@ -7,10 +7,7 @@ bokeh
 dill
 flask
 jinja2
-pip
 simplejson
 quandl
 wtforms
-os
-datetime
 
