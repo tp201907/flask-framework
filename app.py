@@ -75,9 +75,9 @@ def favicon():
 
 if __name__ == '__main__':
        
-    app.run(port=3456)
+    #app.run(port=3456)
         
-    #app.run(port=33507)
+    app.run(port=33507)
     
     #port = int(os.environ.get("PORT", 5000))
 
