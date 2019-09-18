@@ -1,0 +1,19 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+{{ script | safe }}
+</head>
+<body>
+<form action="" method="post">
+{{ form.csrf }}
+<div class="input text"> {{ form.name.label }} {{ form.name }} </div>
+<div class="input submit"><input type="submit" value="Submit"> </div>
+</form>
+</br>
+<div class=page>
+<h3>Stock price comparison</h3>
+{{ div | safe }}
+</div>
+</body>
+</html>
